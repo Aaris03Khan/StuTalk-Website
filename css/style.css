@@ -9,6 +9,12 @@ Tags: one-page, single-page, portfolio, custom-colors, post-formats, responsive,
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600");
+.active-page {
+  color: #e54029 !important;
+}
+.btn {
+  text-transform: uppercase;
+}
 html {
   background-color: #fefefe;
   color: #ea5a12;
@@ -16,7 +22,7 @@ html {
 
 body {
   background-color: #fefefe;
-  font-family: "Anaheim", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: black;
   -webkit-font-smoothing: antialiased;
 }
@@ -28,12 +34,15 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Anaheim", sans-serif;
   color: #afbac4;
 }
 
 p {
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  border-radius: 0 !important;
 }
 
 /*=================================================================
@@ -329,38 +338,38 @@ a:hover {
   height: 33%;
   background-color: #e54029;
   float: left;
-  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  -webkit-animation: sk-cubeGridScaleDelay 0.65s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 0.65s infinite ease-in-out;
 }
 
 .sk-cube-grid .sk-cube1 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-.sk-cube-grid .sk-cube2 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-
-.sk-cube-grid .sk-cube3 {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-
-.sk-cube-grid .sk-cube4 {
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
 
-.sk-cube-grid .sk-cube5 {
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+
+.sk-cube-grid .sk-cube3 {
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+}
+
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
 .sk-cube-grid .sk-cube6 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
 }
 
 .sk-cube-grid .sk-cube7 {
@@ -369,13 +378,13 @@ a:hover {
 }
 
 .sk-cube-grid .sk-cube8 {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
 }
 
 .sk-cube-grid .sk-cube9 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 
 @-webkit-keyframes sk-cubeGridScaleDelay {
@@ -457,7 +466,7 @@ a:hover {
 .header-bradcrumb .active {
   color: #cfcfcf;
   font-weight: 200;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Anaheim", sans-serif;
 }
 
 .header-bradcrumb a:hover {
@@ -1272,7 +1281,7 @@ a:hover {
   Testimonial section
 ==================================================================*/
 .testimonial:before {
-  background: rgba(42, 48, 55, 0.7);
+  background: rgba(42, 48, 55, 0.2);
 }
 
 .client-info {
@@ -1287,14 +1296,14 @@ a:hover {
 }
 
 .client-comment p {
-  color: #afbac4;
-  font-size: 18px;
+  color: #000000;
+  font-size: 20px;
 }
 
 .client-thumb img {
-  border-radius: 50%;
+  border-radius: 20px;
   margin: 0 auto;
-  max-width: 115px;
+  max-width: 500px;
   width: 100%;
 }
 
@@ -1624,7 +1633,6 @@ a:hover {
 }
 
 .social-icon ul li a {
-  background-color: #26292e;
   border: 1px solid transparent;
   display: block;
   height: 70px;
@@ -1642,7 +1650,7 @@ a:hover {
 }
 
 .social-icon ul li a i {
-  color: #55606a;
+  color: #000000 !important;
   display: inline-block;
   font-size: 32px;
   line-height: 70px;
@@ -1989,7 +1997,7 @@ aside.widget {
 }
 
 blockquote {
-  border-left: 5px solid #6cb670;
+  border-left: 5px solid #000000;
   font-style: italic;
   line-height: 22px;
   margin: 20px 0;
